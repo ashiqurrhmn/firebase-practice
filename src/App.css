@@ -1,0 +1,143 @@
+.app-shell {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: linear-gradient(135deg, #f3f7ff, #eefbf7);
+}
+
+.card {
+  width: min(100%, 460px);
+  padding: 36px;
+  border: 1px solid #dfe7e4;
+  border-radius: 20px;
+  background: white;
+  box-shadow: 0 20px 50px rgb(26 58 49 / 12%);
+  text-align: left;
+}
+
+.card h1 {
+  margin: 4px 0 8px;
+  color: #183d35;
+  font-size: 2rem;
+}
+
+.eyebrow {
+  margin: 0;
+  color: #168267;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.intro,
+.loading {
+  color: #60706c;
+}
+
+form {
+  display: grid;
+  gap: 18px;
+  margin-top: 28px;
+}
+
+label {
+  display: grid;
+  gap: 7px;
+  color: #294b43;
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #b9c9c5;
+  border-radius: 10px;
+  background: white;
+  color: #172c27;
+  font: inherit;
+}
+
+input:focus {
+  border-color: #168267;
+  outline: 3px solid rgb(22 130 103 / 15%);
+}
+
+button {
+  border: 0;
+  border-radius: 10px;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: wait;
+  opacity: 0.65;
+}
+
+.primary-button,
+.secondary-button {
+  padding: 13px 18px;
+  color: white;
+  background: #168267;
+}
+
+.secondary-button {
+  width: 100%;
+  margin-top: 24px;
+}
+
+.text-button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 8px;
+  color: #16745f;
+  background: transparent;
+}
+
+.error-message {
+  padding: 12px;
+  border-radius: 10px;
+  color: #8c2020;
+  background: #fff0f0;
+}
+
+.profile-details {
+  display: grid;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.profile-details div {
+  display: grid;
+  gap: 5px;
+  padding: 14px;
+  border-radius: 10px;
+  background: #f1f7f5;
+}
+
+.profile-details span {
+  color: #667873;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.profile-details code {
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 520px) {
+  .app-shell {
+    padding: 14px;
+  }
+
+  .card {
+    padding: 24px 20px;
+  }
+
+  .card h1 {
+    font-size: 1.65rem;
+  }
+}
